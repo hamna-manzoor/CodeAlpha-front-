@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-view">
+            <img id="current-img" src="c5.jpg" alt="Gallery Image">
+            <button id="prev-btn" onclick="changeImage(-1)">Previous</button>
+            <button id="next-btn" onclick="changeImage(1)">Next</button>
+        </div>
+        <div class="thumbnail-container">
+            <img src="c5.jpg" onclick="showImage('c5.jpg')" alt="Thumbnail">
+            <img src="c6.jpg" onclick="showImage('c6.jpg')" alt="Thumbnail">
+            <img src="c7.jpg" onclick="showImage('c7.jpg')" alt="Thumbnail">
+            <img src="c1.jpeg" onclick="showImage('c1.jpeg')" alt="Thumbnail">
+            <img src="c2.jpg" onclick="showImage('c2.jpg')" alt="Thumbnail">
+            <img src="c3.avif" onclick="showImage('c3.avif')" alt="Thumbnail">
+            <img src="c9.webp" onclick="showImage('c9.webp')" alt="Thumbnail">
+            <img src="f1.avif" onclick="showImage('f1.avif')" alt="Thumbnail">
+            <img src="f2.jpg" onclick="showImage('f2.jpg')" alt="Thumbnail">
+            <img src="f3.avif" onclick="showImage('f3.avif')" alt="Thumbnail">
+            <img src="f4.jpeg" onclick="showImage('f4.jpeg')" alt="Thumbnail">
+            <img src="b1.jpg" onclick="showImage('b1.jpg')" alt="Thumbnail">
+            
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

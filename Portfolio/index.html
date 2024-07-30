@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="name"><span>H</span>amna <span>M</span>anzoor</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="navlists" id="navlists">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#education">Education</a></li>
+            <li><a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+     <div class="content">
+        <section id="home" class="home">
+            <div class="container">
+                <img src="WhatsApp_Image_2024-07-02_at_11.24.08_PM-removebg-preview.png" alt="Your Photo">
+                <div class="intro">
+                    <h1>Hamna Manzoor</h1>
+                    <p>I am a student of Software Engineering. Lorem ipsum, dolor
+                        sit amet consectetur adipisicing elit. Atque,
+                        ducimus consectetur vitae dignissimom.</p>
+                    <a class="btn btn-primary btn-color:black" href="My Resume.pdf" target="Blank"
+                        role="button">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="us">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos minus temporibus consectetur
+                        illo maiores voluptate ipsa laborum asperiores officia iusto
+                        cupiditate incidunt delectus impedit,
+                        aliquid nesciunt excepturi fugiat? Quo, mollitia!</p>
+                </div>
+                <img src="WhatsApp_Image_2024-07-02_at_11.24.08_PM-removebg-preview.png" alt="Your Photo"
+                    class="profile-photo">
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="containers">
+                <h2>My Skills</h2>
+                <div class="skill">
+                    <div class="box">
+                        <img src="html-5.png" alt="">
+                        <h6>HTML5</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                    <div class="box">
+                        <img src="css-3.png" alt="">
+                        <h6>CSS</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                    <div class="box">
+                        <img src="java-script.png" alt="">
+                        <h6>JavaScript</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="box">
+                        <img src="bootstrap.png" alt="">
+                        <h6>BootStrap</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                    <div class="box">
+                        <img src="node-js.png" alt="">
+                        <h6>NodeJs</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                    <div class="box">
+                        <img src="php.png" alt="">
+                        <h6>PHP</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Dolore repudiandae quos. </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <section id="education" class="education">
+        <div class="container1">
+            <h2>Education</h2>
+            <ol>
+                <li>BS Software Engineering</li>
+                <li>FSc Pre-Engineering</li>
+                <li>Matric Sciences</li>
+            </ol>
+            <h2>Certification</h2>
+            <ul>
+                <li>HTML(Coursera)</li>
+                <li>CSS(Coursera)</li>
+                <li>JavaScript(Coursera)</li>
+                <li>C++ Basics(Coursera)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container1">
+            <h2>Contact Me</h2>
+            <div class="rabta">
+                <div class="tab">
+                    <input type="name" name="Name" id="names" placeholder="ENTER YOUR NAME">
+                    <input type="Email" name="Email" id="email" placeholder="ENTER YOUR EMAIL">
+                </div>
+                <div class="message">
+                    <input type="msg" name="msg" id="msg" placeholder="WRITE YOUR MESSAGE">
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+            <p class="contact-info">YOU CAN ALSO CONTACT ME THROUGH:</p>
+            <div class="social-links">
+                <a href="linkedin.com/in/hamna-manzoor-6baa7327b/" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i> LinkedIn
+                </a>
+                <a href="https://t.me/your-telegram" target="_blank">
+                    <i class='bx bxl-telegram'></i> Telegram
+                </a>
+            </div>
+    </section> 
+
+    </div> 
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('navlists').classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
